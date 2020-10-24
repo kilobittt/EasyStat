@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/questionnairy_type_description"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"/>
+
+    <CheckBox
+        android:id="@+id/chb_psychology"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/psychology_name"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/secondary_text"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox"
+        />
+    <CheckBox
+        android:id="@+id/chb_funny"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/funny_name"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/secondary_text"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox"
+        />
+    <CheckBox
+        android:id="@+id/chb_sociology"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/sociology_name"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/secondary_text"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox"
+        />
+    <CheckBox
+        android:id="@+id/chb_school"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/school_name"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/secondary_text"
+        android:textSize="15sp"
+        android:button="@null"
+        android:drawableRight="@drawable/checkbox"
+        />
+
+    <Button
+        android:id="@+id/b_filter_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_button_text"
+        android:textColor="@color/primary_text"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:background="@drawable/filter_questionnaire_group_button"/>
+
+
+
+</LinearLayout>

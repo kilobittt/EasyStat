@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_with_auth_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/accent"
+                    android:foreground="@drawable/ic_baseline_person_outline_24"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_profile_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp"
+                        android:padding="4dp"
+                        android:layout_margin="2dp"
+                        android:text="Никнейм"/>
+
+                    <TextView
+                        android:id="@+id/tv_profile_full_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_text"
+                        android:textSize="18sp"
+                        android:padding="4dp"
+                        android:layout_margin="2dp"
+                        android:text="Фамилия Имя"/>
+
+                    <TextView
+                        android:id="@+id/tv_profile_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_text"
+                        android:textSize="13sp"
+                        android:padding="4dp"
+                        android:layout_margin="2dp"
+                        android:text="example@email.com"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:text="Мои опросники"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_my_questionnaire"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/bt_create_new_questionnaire"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_text"
+                android:layout_margin="20dp"
+                android:padding="5dp"
+                android:background="@drawable/search_button"
+                android:foreground="@drawable/ic_baseline_add_24"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_without_auth_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/without_auth_message"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_text"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/bt_sign_in_from_profile"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signIn_button_text"
+                    android:textColor="@color/primary_text"
+                    android:layout_margin="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/search_button"/>
+
+                <Button
+                    android:id="@+id/bt_sign_up_from_profile"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signUp_button_text"
+                    android:textColor="@color/primary_text"
+                    android:layout_margin="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/search_button"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/btnv_main_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/bottom_navigation"/>
+
+</LinearLayout>

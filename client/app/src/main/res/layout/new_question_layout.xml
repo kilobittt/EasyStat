@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Выберите тип вопроса"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:textColor="@color/primary_text"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rdb_radioButtonType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Radiobutton"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/secondary_text"
+                android:button="@null"
+                android:drawableLeft="@drawable/radiobutton"
+                />
+
+            <RadioButton
+                android:id="@+id/rdb_checkbox_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Checkbox"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/secondary_text"
+                android:button="@null"
+                android:drawableLeft="@drawable/radiobutton"
+
+                />
+
+            <RadioButton
+                android:id="@+id/rdb_text_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Текст"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/secondary_text"
+                android:button="@null"
+                android:drawableLeft="@drawable/radiobutton"
+                />
+
+        </RadioGroup>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_new_questionnaire_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_questionnaire_name_hint"
+            android:inputType="text"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/secondary_text"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/primary"
+            app:met_primaryColor="@color/primary_dark"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_new_questionnaire_description"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:hint="@string/new_questionnaire_description_hint"
+            android:inputType="textMultiLine"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/secondary_text"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/primary"
+            app:met_primaryColor="@color/primary_dark"
+            app:met_singleLineEllipsis="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Варианты ответа:"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:textColor="@color/primary_text"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/et_sign_in_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_description"
+            android:inputType="text"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/secondary_text"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            app:met_floatingLabel="highlight"
+            app:met_baseColor="@color/primary"
+            app:met_primaryColor="@color/primary_dark"
+            app:met_singleLineEllipsis="true"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

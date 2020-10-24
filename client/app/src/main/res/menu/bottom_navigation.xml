@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nvbt_my_questionnaire"
+        android:icon="@drawable/ic_baseline_list_alt_24"
+        android:title="@string/my_questionnaire_button_text"/>
+
+
+    <item
+        android:id="@+id/nvbt_profile"
+        android:icon="@drawable/ic_baseline_assignment_ind_24"
+        android:title="@string/profile_button"/>
+
+    <item
+        android:id="@+id/nvbt_stat"
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="@string/stat_button_text"/>
+
+</menu>

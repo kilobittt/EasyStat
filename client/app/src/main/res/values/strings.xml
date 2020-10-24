@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">EasyStat</string>
+    <string name="app_description">Данное приложение создано для работы с опросниками. Здесь вы сможете пройти опросники на различную тематику, а также создать свой собственный опросник. А так же Вы сможете получить статистику по опросникам, которые Вы создали.\n
+        Приятного пользования
+    </string>
+    <string name="welcome_text">EasyStat</string>
+    <string name="signIn_button_text">Войти</string>
+    <string name="signUp_button_text">Зарегистрироваться</string>
+    <string name="auth_ignore_button_text">Пропустить авторизацию</string>
+    <string name="username_description">Никнейм</string>
+    <string name="firstName_description">Имя</string>
+    <string name="lastName_description">Фамилия</string>
+    <string name="email_description">E-mail</string>
+    <string name="password_description">Пароль</string>
+    <string name="questions_count_description">Количество вопросов:</string>
+    <string name="questionnairy_type_description">Категоррии опросников</string>
+    <string name="psychology_name">Психологические</string>
+    <string name="funny_name">Развлекательные</string>
+    <string name="sociology_name">Социологические</string>
+    <string name="school_name">Школьные</string>
+    <string name="filter_button_text">Применить фильтр</string>
+    <string name="my_questionnaire_button_text">Опросники</string>
+    <string name="profile_button">Профиль</string>
+    <string name="stat_button_text">Статистика</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="search_window_header">Найти опросник</string>
+    <string name="search_window_description">Введите id опросник и/или его название</string>
+    <string name="id_field_description_in_search">ID</string>
+    <string name="search_button_text">Найти</string>
+    <string name="search_by_name_field_description">Название опросника</string>
+    <string name="not_found_text_header">Не найдено</string>
+    <string name="not_found_description">Опросника с таким названием и таким ID не удалось найти. Попробуйте указать только название или только ID</string>
+    <string name="ok_text">OK</string>
+    <string name="text_answer_header">Ваш ответ:</string>
+    <string name="preveus_button_text">Предыдущий</string>
+    <string name="next_button_text">Следующий</string>
+    <string name="end_questionnaire_text">Завершить</string>
+    <string name="ending_questionnaire_message">Тест завершен</string>
+    <string name="ending_questionnaire_description">Поздравляем с успешным прохождением опросника</string>
+    <string name="without_auth_message">Вы не вошли в свой аккаунт EasyStat</string>
+    <string name="cancle_button_text">Отмена</string>
+    <string name="new_questionnaire_name_hint">Название опросника</string>
+    <string name="new_questionnaire_description_hint">Описание опросника</string>
+    <string name="create_text_button">Создать</string>
+    <string name="add_button_description">Добавить\nвопрос</string>
+    <string name="save_questionnaire_button_description">сохранить опросник</string>
+</resources>

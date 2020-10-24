@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/search_window_header"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/search_window_description"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:textColor="@color/secondary_text"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_questionnaire_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/id_field_description_in_search"
+        android:inputType="number"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:layout_margin="15dp"
+
+        app:met_floatingLabel="highlight"
+        app:met_baseColor="#0056d3"
+        app:met_primaryColor="#982360"
+        app:met_singleLineEllipsis="true"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_questionnaire_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_by_name_field_description"
+        android:inputType="text"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:layout_margin="15dp"
+
+        app:met_floatingLabel="highlight"
+        app:met_baseColor="#0056d3"
+        app:met_primaryColor="#982360"
+        app:met_singleLineEllipsis="true"/>
+
+    <Button
+        android:id="@+id/b_search"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search_button_text"
+        android:textColor="@color/primary_text"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:background="@drawable/search_button"/>
+
+
+
+
+</LinearLayout>

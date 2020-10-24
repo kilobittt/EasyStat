@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_new_questionnaire_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/new_questionnaire_name_hint"
+        android:inputType="text"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        app:met_floatingLabel="highlight"
+        app:met_baseColor="@color/primary"
+        app:met_primaryColor="@color/primary_dark"
+        app:met_singleLineEllipsis="true"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_new_questionnaire_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="@string/new_questionnaire_description_hint"
+        android:inputType="textMultiLine"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/secondary_text"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_margin="3dp"
+        app:met_floatingLabel="highlight"
+        app:met_baseColor="@color/primary"
+        app:met_primaryColor="@color/primary_dark"
+        app:met_singleLineEllipsis="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+        <Button
+            android:id="@+id/bt_create_new_questionnaire_in_form"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/create_text_button"
+            android:textColor="@color/primary_text"
+            android:layout_margin="20dp"
+            android:padding="5dp"
+            android:background="@drawable/search_button"/>
+
+        <Button
+            android:id="@+id/bt_cancel_creating_form"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/cancle_button_text"
+            android:textColor="@color/primary_text"
+            android:layout_margin="20dp"
+            android:padding="5dp"
+            android:background="@drawable/search_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>
